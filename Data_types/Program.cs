@@ -20,11 +20,11 @@ namespace Data_types
             Console.WriteLine($"short: {sizeof(decimal)} Байт памяти  и принимает значение в диапазоне: {decimal.MinValue} .... {decimal.MaxValue}");
 
 
-            Console.WriteLine('+'.GetType()); ;
-            Console.WriteLine(5.GetType()); ;
-            Console.WriteLine(5.2.GetType()); ;
-            Console.WriteLine(5.2f.GetType()); ;
-            Console.WriteLine(5.2d.GetType()); ;
+            Console.WriteLine('+'.GetType());
+            Console.WriteLine(5.GetType());
+            Console.WriteLine(5.2.GetType());
+            Console.WriteLine(5.2f.GetType());
+            Console.WriteLine(5.2d.GetType());
         }
     }
 }
