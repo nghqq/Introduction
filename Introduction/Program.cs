@@ -1,4 +1,5 @@
 ﻿//#define CLASS_CONSOLE
+//#define STRING_OPERATIONS
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -23,15 +24,17 @@ namespace Introduction
 
             Console.Beep(500, 2000); 
 #endif
+#if STRING_OPERATIONS
             Console.Write("Введите Ваше имя: ");
             string first_name = Console.ReadLine();
             Console.Write("Введите Вашу фамилию: ");
             string last_name = Console.ReadLine();
             Console.Write("Введите Ваш возраст: ");
             int age = Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine(last_name+ " " +first_name+" "+age+" y/o "); // конкатенация строк
+            Console.WriteLine(last_name + " " + first_name + " " + age + " y/o "); // конкатенация строк
             Console.WriteLine(String.Format("{0} {1} {2} y/o", last_name, first_name, age)); //Форматирование строк
-            Console.WriteLine($"{last_name} {first_name} {age} y/o");  //интерполяция строк
+            Console.WriteLine($"{last_name} {first_name} {age} y/o");  //интерполяция строк  
+#endif
         }
     }
 }
