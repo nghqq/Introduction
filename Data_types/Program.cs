@@ -138,7 +138,7 @@ namespace Data_types
                 number_counter += arr[i].Length;
             }
                 Console.WriteLine("Колл-во элеметов в зубчатом массиве:"+" "+" "+number_counter);
-            Console.WriteLine<double>(sum_arr/number_counter);
+            Console.WriteLine(sum_arr/number_counter);
 
 
 
