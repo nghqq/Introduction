@@ -75,7 +75,7 @@ namespace Data_types
             arr[1] = new int[4]; // Первая ячейка содержит четыре ячейки
             arr[2] = new int[5]; // Вторая ячейка содержит пять ячеек
             arr[3] = new int[6]; // Третья ячейка содержит шесть ячеек
-            arr[4] = new int[2888]; // Четвертая ячейка содержит семь ячеек
+            arr[4] = new int[7]; // Четвертая ячейка содержит семь ячеек
             
 
 
@@ -138,7 +138,7 @@ namespace Data_types
                 number_counter += arr[i].Length;
             }
                 Console.WriteLine("Колл-во элеметов в зубчатом массиве:"+" "+" "+number_counter);
-            Console.WriteLine(sum_arr/number_counter);
+            Console.WriteLine<double>(sum_arr/number_counter);
 
 
 
