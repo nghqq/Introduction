@@ -11,7 +11,8 @@ namespace Calc
         static void Main(string[] args)
         {
             Console.Write("Введите выражение: ");
-            string expression = Console.ReadLine(); 
+            string expression = Console.ReadLine();
+            expression = expression.Replace(".", ",");
             Console.WriteLine(expression);
             String[] numbers = expression.Split('+', '-', '*', '/');
             double a = Convert.ToDouble(numbers[0]);
@@ -20,9 +21,9 @@ namespace Calc
             {
                 Console.WriteLine($"{a}+{b}={a + b}");
             }
-            else if (expression.Contains("-")) Console.WriteLine($"{a}+{b}={a + b}");
-            else if (expression.Contains("*")) Console.WriteLine($"{a}+{b}={a + b}");
-            else if (expression.Contains("/")) Console.WriteLine($"{a}+{b}={a + b}");
+            else if (expression.Contains("-")) Console.WriteLine($"{a}+{b}={a - b}");
+            else if (expression.Contains("*")) Console.WriteLine($"{a}+{b}={a * b}");
+            else if (expression.Contains("/")) Console.WriteLine($"{a}+{b}={a / b}");
         }
     }
 }
